@@ -12,15 +12,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/et_input"
-        android:hint="enter text here"
+        android:hint="@string/enter_text_here"
         android:padding="12dp"
-        android:background="@android:drawable/editbox_background"/>
+        android:background="@android:drawable/editbox_background"
+        android:autofillHints="1"
+        android:inputType="number"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_generate"
-        android:text="Generate"
+        android:text="@string/generate"
         android:layout_marginTop="16dp"/>
 
     <ImageView
@@ -28,6 +30,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/iv_output"
         android:scaleType="fitCenter"
-        android:adjustViewBounds="true"/>
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/qrcode" />
 
 </LinearLayout>
